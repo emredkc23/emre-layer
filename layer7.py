@@ -61,8 +61,8 @@ def buildblock(size):
 
 def usage():
 	print '---------------------------------------------------'
-	print 'KULLANIM: python Metehan.py <url>'
-	print 'Metehan Cloudflare Script'
+	print 'KULLANIM: python layer7.py <url>'
+	print 'emredkc Cloudflare Script'
 	print "\a"
 print \
 """
@@ -94,7 +94,7 @@ def httpcall(url):
 	except urllib2.HTTPError, e:
 			#print e.code
 			set_flag(1)
- 			print 'Metehan Cloudflare Script'
+ 			print 'emredkc Cloudflare Script'
 			code=1
 	except urllib2.URLError, e:
 			#print e.reason
@@ -136,7 +136,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "Metehan Cloudflare Script"
+		print "emredkc Cloudflare Script"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
